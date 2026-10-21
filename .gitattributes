@@ -3,3 +3,4 @@
 *.md text eol=lf
 *.json text eol=lf
 *.yml text eol=lf
+modules/nse_studio_ui/assets/OFL.txt -text

@@ -10,6 +10,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'modules'))
 try:
     from PySide6.QtWidgets import QApplication
 except ImportError:
+    if os.environ.get('NSE_UI_REQUIRED') == '1':
+        raise
     QApplication = None
 
 
