@@ -8,6 +8,9 @@ version = "0.1.0"
 description = "Python-first modular Nexus Studio Environment"
 requires-python = ">=3.12"
 
+[project.scripts]
+nexus-runtime = "nse_runtime.__main__:main"
+
 [tool.setuptools.packages.find]
 where = ["modules"]
 include = ["nse_*"]
