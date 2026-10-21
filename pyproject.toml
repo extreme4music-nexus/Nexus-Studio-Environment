@@ -8,7 +8,11 @@ version = "0.1.0"
 description = "Python-first modular Nexus Studio Environment"
 requires-python = ">=3.12"
 
+[project.optional-dependencies]
+ui = ["PySide6-Essentials==6.12.0"]
+
 [project.scripts]
+nexus-studio = "nse_runtime.studio_cli:main"
 nexus-runtime = "nse_runtime.__main__:main"
 nexus-workspace = "nse_runtime.workspace_cli:main"
 
@@ -16,3 +20,6 @@ nexus-workspace = "nse_runtime.workspace_cli:main"
 where = ["modules"]
 include = ["nse_*"]
 namespaces = false
+
+[tool.setuptools.package-data]
+nse_studio_ui = ["assets/*"]

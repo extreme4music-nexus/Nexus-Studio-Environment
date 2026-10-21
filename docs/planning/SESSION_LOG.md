@@ -65,3 +65,7 @@ Workspace code commit: 0caaab569bf704d5904edd687cfb9674015864ee. GitHub Actions 
 Git auto-maintenance при првиот commit пријави permission warning; commit/push сепак завршија, connectivity fsck и remote HEAD check поминаа. Нема глобални Git промени, legacy промени или приватни project payloads во commit.
 
 Следна точка: разработка на UI prototype/design-system пакет за Workspace, со проверка на трите платформи пред конечен toolkit избор. Реален AI, media обработка и NeuraFS adapter не се започнати во овој пакет.
+
+## WP-003 · 2026-10-22
+
+Studio project browser prototype: injected WorkspacePort, serialized background IO, revision-safe save, dirty guards, shared Fusion theme and bundled Noto Sans/OFL. 56 local tests passed including five UI action/thread/error tests. Synthetic preview inspected; initial missing font fixed. Native accessibility/high-DPI and final UI parity remain open. Legacy files unchanged. See docs/ui/VERIFICATION.md for CI evidence.

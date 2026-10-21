@@ -1,3 +1,5 @@
+> WP003-PROTOTYPE-20261022: Studio project browser е имплементиран; UI-01/02/03 остануваат делумни до native parity/SDK diagnostics проверки. [Детали](../ui/README.md).
+
 # Потврдена состојба и граници на проверката
 
 Датум: 2026-10-21.

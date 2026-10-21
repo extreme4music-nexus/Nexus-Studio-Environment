@@ -1,3 +1,5 @@
+> WP003-PROTOTYPE-20261022: Studio project browser е имплементиран; UI-01/02/03 остануваат делумни до native parity/SDK diagnostics проверки. [Детали](../ui/README.md).
+
 > WP002-LOCAL-20261022: Workspace metadata е имплементиран и локално проверен. Windows/Linux/macOS CI е потврдена. Следно: UI-01/02 prototype и design-system пакет за project browser; toolkit не е однапред избран. [Workspace verification](../workspace/VERIFICATION.md).
 
 > WP001-IMPLEMENTED-20261021: Костурот е имплементиран и локално проверен. CI е потврдена на Windows/Linux/macOS. Следно: разработка на WORK/UI пакетот за проекти според [master roadmap](system/ROADMAP.md). Види [verification](../runtime/VERIFICATION.md).

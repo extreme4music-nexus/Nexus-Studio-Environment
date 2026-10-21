@@ -52,3 +52,30 @@ def compose_workspace(root):
     module = WorkspaceModule(root)
     runtime = compose(RuntimeConfig(('workspace',)), {'workspace': lambda: module})
     return runtime, module.service
+
+
+def make_studio_window(app, service):
+    from nse_studio_ui.theme import apply_theme
+    from nse_studio_ui.window import StudioWindow
+    apply_theme(app)
+    return StudioWindow(service)
+
+
+def launch_studio(root):
+    try:
+        from PySide6.QtWidgets import QApplication
+    except ImportError:
+        print('Install nexus-studio-environment[ui] to launch Studio.')
+        return 2
+    app = QApplication([])
+    runtime, service = compose_workspace(root)
+    window = make_studio_window(app, service)
+    window.show()
+    def ready(_):
+        window.refresh_projects()
+    window.submit(lambda: runtime.start(), ready)
+    try:
+        return app.exec()
+    finally:
+        window.pool.waitForDone()
+        runtime.stop()
