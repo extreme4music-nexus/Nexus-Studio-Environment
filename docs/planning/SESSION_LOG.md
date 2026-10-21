@@ -69,3 +69,5 @@ Git auto-maintenance при првиот commit пријави permission warnin
 ## WP-003 · 2026-10-22
 
 Studio project browser prototype: injected WorkspacePort, serialized background IO, revision-safe save, dirty guards, shared Fusion theme and bundled Noto Sans/OFL. 56 local tests passed including five UI action/thread/error tests. Synthetic preview inspected; initial missing font fixed. Native accessibility/high-DPI and final UI parity remain open. Legacy files unchanged. See docs/ui/VERIFICATION.md for CI evidence.
+
+WP-003 closed: 57 tests; independent wheel smoke; successful CI run 39687832293 on all three OSes. Initial Linux missing-EGL failure fixed and required UI imports enforced. Next bounded work: module diagnostics and session/decision browsing; native visual parity remains a release gate.

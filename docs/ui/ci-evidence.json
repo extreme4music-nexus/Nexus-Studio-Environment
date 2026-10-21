@@ -1,0 +1,32 @@
+{
+  "id": 39687832293,
+  "head_sha": "cfa62a99d3f0781f6f8faa5740ff525cfbb69387",
+  "conclusion": "success",
+  "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39687832293",
+  "jobs": [
+    {
+      "name": "check (ubuntu-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39687832293/job/119526290840"
+    },
+    {
+      "name": "check (windows-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39687832293/job/119526290963"
+    },
+    {
+      "name": "check (macos-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39687832293/job/119526291083"
+    }
+  ],
+  "local_tests": 57,
+  "local_platform": "Windows / Python 3.12",
+  "wheel_entries": 39,
+  "independent_wheel_ui_smoke": "passed",
+  "scope": "Offscreen functional checks, not native interactive or pixel-identical parity",
+  "initial_run": {
+    "id": 39687663901,
+    "result": "Linux missing libEGL.so.1; corrected; UI dependency failures now mandatory"
+  }
+}
