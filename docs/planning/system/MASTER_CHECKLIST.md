@@ -112,3 +112,7 @@ PLAN-05 е потврден со корисничкото „Ајде започ
 ## WP002-LOCAL-20261022
 
 WORK-01–05 се имплементирани и локално проверени во metadata-only опфатот: project/session/decision/asset-reference schema, revision/CAS backend, reopen/history и metadata backup/restore. WORK-04 е provenance на референци, не media import/render. WORK-05 не вклучува backup на audio/MIDI bytes или целосна revision history. Сите UI/NFS/CORE/AUDIO/MUSIC ставки остануваат отворени. [Докази](../../workspace/VERIFICATION.md). Remote CI е pending.
+
+## WP002-CLOSED-20261022
+
+WORK-01–05 се затворени во metadata-only опфатот од WP-002, со 51 тестови и successful install/demo/CLI проверки на Windows/Linux/macOS. [Verification](../../workspace/VERIFICATION.md). Media import, byte backup, UI, audio и NeuraFS интеграцијата остануваат отворени според нивните посебни ставки.

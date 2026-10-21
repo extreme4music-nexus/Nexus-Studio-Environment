@@ -68,3 +68,7 @@ WP-001 е завршен: 24 локални тестови, offline package smok
 ## WP002-LOCAL-20261022
 
 Workspace metadata пакетот е имплементиран и поврзан со Runtime. Работат create/open/save/list, history, sessions/decisions, asset references и metadata-only backup/restore. 51 локални тестови, NAS metadata smoke и isolated wheel install smoke поминаа. Backend е immutable JSON revisions + CAS/lock/HEAD; нема автоматско бришење stale locks или непознати schema migrations. Remote CI е pending. Нема UI, реален модел, audio processing или NeuraFS промени во пакетот.
+
+## WP002-CLOSED-20261022
+
+Workspace е затворен: code commit 0caaab5, 51 тестови и CI install/demo/CLI success на Windows/Linux/macOS; локален NAS metadata smoke и isolated wheel smoke исто поминаа. Code и документацијата се синхронизираат со приватниот GitHub репозиториум. Следен пакет е UI-01/02: toolkit prototype/shared design system и разграничен project browser, без предвремен конечен избор на toolkit.

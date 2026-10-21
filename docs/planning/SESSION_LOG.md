@@ -57,3 +57,11 @@ FRAME-01–08 и FRAME-10 се завршени локално. FRAME-09 чек�
 Почетна ревизија 75f9a95083cea33520efbeae5eb14f3486e89e95, чист Git статус. Прво се зачувани WP-002 и ADR 0002, потоа contracts/backend/service/module/CLI и тестови. Извршени се 51 Windows тестови, NAS metadata smoke и offline wheel build/install smoke со независно create/reopen. Сите поминаа; нема legacy или NeuraFS код/податоци менувани. Проверени се corrupt/partial-write сценарија и два одделни writer процеси.
 
 WORK-01–05 се metadata-only завршени локално; UI и media области остануваат отворени. Пред конечна испорака следи Git sync и remote CI потврда, со evidence. Следен производен пакет е UI toolkit prototype/shared design system за project browser, пред градење голем UI.
+
+## 2026-10-22 — WP002-CLOSED-20261022
+
+Workspace code commit: 0caaab569bf704d5904edd687cfb9674015864ee. GitHub Actions run 39686458787 заврши success на Windows/Linux/macOS: install, 51 tests, runtime demos, workspace smoke и CLI. WORK-01–05 се metadata-only затворени; evidence е во docs/workspace/ci-evidence.json. Конечната промена содржи само документација и CI докази.
+
+Git auto-maintenance при првиот commit пријави permission warning; commit/push сепак завршија, connectivity fsck и remote HEAD check поминаа. Нема глобални Git промени, legacy промени или приватни project payloads во commit.
+
+Следна точка: разработка на UI prototype/design-system пакет за Workspace, со проверка на трите платформи пред конечен toolkit избор. Реален AI, media обработка и NeuraFS adapter не се започнати во овој пакет.
