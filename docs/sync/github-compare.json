@@ -1,0 +1,486 @@
+{
+  "branch_vs_main": {
+    "repository_full_name": "extreme4music-nexus/NeuraFS_v2.0",
+    "base": "main",
+    "head": "codex/local-neurafs-repair-20261016",
+    "status": "diverged",
+    "ahead_by": 48,
+    "behind_by": 1,
+    "total_commits": 48,
+    "too_large": null,
+    "base_commit": {
+      "sha": "df8bfab823d63a09c96fde79a3536ff1af47801d",
+      "url": "https://api.github.com/repos/extreme4music-nexus/NeuraFS_v2.0/commits/df8bfab823d63a09c96fde79a3536ff1af47801d",
+      "html_url": "https://github.com/extreme4music-nexus/NeuraFS_v2.0/commit/df8bfab823d63a09c96fde79a3536ff1af47801d"
+    },
+    "merge_base_commit": {
+      "sha": "077457e689509a84d39654637f0fce988ee05989",
+      "url": "https://api.github.com/repos/extreme4music-nexus/NeuraFS_v2.0/commits/077457e689509a84d39654637f0fce988ee05989",
+      "html_url": "https://github.com/extreme4music-nexus/NeuraFS_v2.0/commit/077457e689509a84d39654637f0fce988ee05989"
+    },
+    "files": [
+      {
+        "filename": "CROSS_PLATFORM_ROADMAP.md",
+        "status": "added",
+        "additions": 20,
+        "deletions": 0,
+        "changes": 20,
+        "previous_filename": null
+      },
+      {
+        "filename": "DEBUG_REPORT.md",
+        "status": "added",
+        "additions": 285,
+        "deletions": 0,
+        "changes": 285,
+        "previous_filename": null
+      },
+      {
+        "filename": "INSTALL.md",
+        "status": "modified",
+        "additions": 4,
+        "deletions": 11,
+        "changes": 15,
+        "previous_filename": null
+      },
+      {
+        "filename": "LATEST_ACHIEVEMENTS.md",
+        "status": "added",
+        "additions": 27,
+        "deletions": 0,
+        "changes": 27,
+        "previous_filename": null
+      },
+      {
+        "filename": "MANIFEST.in",
+        "status": "added",
+        "additions": 2,
+        "deletions": 0,
+        "changes": 2,
+        "previous_filename": null
+      },
+      {
+        "filename": "NEW_ROADMAP.md",
+        "status": "modified",
+        "additions": 44,
+        "deletions": 104,
+        "changes": 148,
+        "previous_filename": null
+      },
+      {
+        "filename": "Nexus_Project/PROJECT_STATE.md",
+        "status": "added",
+        "additions": 40,
+        "deletions": 0,
+        "changes": 40,
+        "previous_filename": null
+      },
+      {
+        "filename": "README.md",
+        "status": "modified",
+        "additions": 7,
+        "deletions": 4,
+        "changes": 11,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/__init__.py",
+        "status": "modified",
+        "additions": 16,
+        "deletions": 2,
+        "changes": 18,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/api/manager.py",
+        "status": "modified",
+        "additions": 177,
+        "deletions": 30,
+        "changes": 207,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/api/server.py",
+        "status": "modified",
+        "additions": 8,
+        "deletions": 1,
+        "changes": 9,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/benchmarks/metrics.py",
+        "status": "modified",
+        "additions": 62,
+        "deletions": 52,
+        "changes": 114,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/cli.py",
+        "status": "modified",
+        "additions": 671,
+        "deletions": 347,
+        "changes": 1018,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/codecs/dac.py",
+        "status": "modified",
+        "additions": 54,
+        "deletions": 15,
+        "changes": 69,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/codecs/encodec.py",
+        "status": "modified",
+        "additions": 59,
+        "deletions": 4,
+        "changes": 63,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/codecs/siren.py",
+        "status": "modified",
+        "additions": 8,
+        "deletions": 2,
+        "changes": 10,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/codecs/siren_codec.py",
+        "status": "modified",
+        "additions": 16,
+        "deletions": 6,
+        "changes": 22,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/config.py",
+        "status": "modified",
+        "additions": 35,
+        "deletions": 3,
+        "changes": 38,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/dsp/filters.py",
+        "status": "modified",
+        "additions": 3,
+        "deletions": 4,
+        "changes": 7,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/dsp/loader.py",
+        "status": "modified",
+        "additions": 38,
+        "deletions": 21,
+        "changes": 59,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/engine.py",
+        "status": "modified",
+        "additions": 17,
+        "deletions": 8,
+        "changes": 25,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/modules/queue_manager.py",
+        "status": "modified",
+        "additions": 3,
+        "deletions": 0,
+        "changes": 3,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/modules/state_db.py",
+        "status": "modified",
+        "additions": 21,
+        "deletions": 0,
+        "changes": 21,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/modules/watcher.py",
+        "status": "modified",
+        "additions": 25,
+        "deletions": 22,
+        "changes": 47,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/service_orchestrator.py",
+        "status": "modified",
+        "additions": 43,
+        "deletions": 20,
+        "changes": 63,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/storage.py",
+        "status": "modified",
+        "additions": 22,
+        "deletions": 4,
+        "changes": 26,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/package-lock.json",
+        "status": "added",
+        "additions": 1068,
+        "deletions": 0,
+        "changes": 1068,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/package.json",
+        "status": "added",
+        "additions": 21,
+        "deletions": 0,
+        "changes": 21,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/sdk/python/sdk.py",
+        "status": "modified",
+        "additions": 2,
+        "deletions": 1,
+        "changes": 3,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/setup.py",
+        "status": "modified",
+        "additions": 7,
+        "deletions": 2,
+        "changes": 9,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/tests/test_api_health.py",
+        "status": "added",
+        "additions": 11,
+        "deletions": 0,
+        "changes": 11,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/tests/test_api_manager.py",
+        "status": "added",
+        "additions": 146,
+        "deletions": 0,
+        "changes": 146,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/tests/test_codec_regressions.py",
+        "status": "added",
+        "additions": 67,
+        "deletions": 0,
+        "changes": 67,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/tests/test_config.py",
+        "status": "added",
+        "additions": 8,
+        "deletions": 0,
+        "changes": 8,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/tests/test_core.py",
+        "status": "modified",
+        "additions": 195,
+        "deletions": 10,
+        "changes": 205,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/tests/test_samba_cli.py",
+        "status": "added",
+        "additions": 73,
+        "deletions": 0,
+        "changes": 73,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/tests/test_service_orchestrator.py",
+        "status": "added",
+        "additions": 50,
+        "deletions": 0,
+        "changes": 50,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/tests/test_vfs_mount_state.py",
+        "status": "added",
+        "additions": 130,
+        "deletions": 0,
+        "changes": 130,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/utils/__init__.py",
+        "status": "added",
+        "additions": 17,
+        "deletions": 0,
+        "changes": 17,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/utils/process.py",
+        "status": "added",
+        "additions": 71,
+        "deletions": 0,
+        "changes": 71,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/vfs/drivers/linux_fuse.py",
+        "status": "modified",
+        "additions": 6,
+        "deletions": 6,
+        "changes": 12,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/vfs/drivers/samba_vfs.c",
+        "status": "modified",
+        "additions": 10,
+        "deletions": 10,
+        "changes": 20,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/vfs/drivers/windows_winfsp.py",
+        "status": "modified",
+        "additions": 146,
+        "deletions": 90,
+        "changes": 236,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/vfs/ram_streamer.py",
+        "status": "modified",
+        "additions": 37,
+        "deletions": 72,
+        "changes": 109,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/vfs/samba_manager.py",
+        "status": "modified",
+        "additions": 199,
+        "deletions": 133,
+        "changes": 332,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/vfs/service_manager.py",
+        "status": "modified",
+        "additions": 172,
+        "deletions": 64,
+        "changes": 236,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/vfs/virtual_layer.py",
+        "status": "modified",
+        "additions": 61,
+        "deletions": 15,
+        "changes": 76,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/web/app.js",
+        "status": "modified",
+        "additions": 18,
+        "deletions": 3,
+        "changes": 21,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/web/manager.py",
+        "status": "modified",
+        "additions": 103,
+        "deletions": 26,
+        "changes": 129,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/web/public/app.js",
+        "status": "added",
+        "additions": 385,
+        "deletions": 0,
+        "changes": 385,
+        "previous_filename": null
+      },
+      {
+        "filename": "pyproject.toml",
+        "status": "modified",
+        "additions": 4,
+        "deletions": 1,
+        "changes": 5,
+        "previous_filename": null
+      },
+      {
+        "filename": "setup.py",
+        "status": "modified",
+        "additions": 249,
+        "deletions": 12,
+        "changes": 261,
+        "previous_filename": null
+      }
+    ]
+  },
+  "local_main_vs_remote_main": {
+    "repository_full_name": "extreme4music-nexus/NeuraFS_v2.0",
+    "base": "077457e68",
+    "head": "main",
+    "status": "ahead",
+    "ahead_by": 1,
+    "behind_by": 0,
+    "total_commits": 1,
+    "too_large": null,
+    "base_commit": {
+      "sha": "077457e689509a84d39654637f0fce988ee05989",
+      "url": "https://api.github.com/repos/extreme4music-nexus/NeuraFS_v2.0/commits/077457e689509a84d39654637f0fce988ee05989",
+      "html_url": "https://github.com/extreme4music-nexus/NeuraFS_v2.0/commit/077457e689509a84d39654637f0fce988ee05989"
+    },
+    "merge_base_commit": {
+      "sha": "077457e689509a84d39654637f0fce988ee05989",
+      "url": "https://api.github.com/repos/extreme4music-nexus/NeuraFS_v2.0/commits/077457e689509a84d39654637f0fce988ee05989",
+      "html_url": "https://github.com/extreme4music-nexus/NeuraFS_v2.0/commit/077457e689509a84d39654637f0fce988ee05989"
+    },
+    "files": [
+      {
+        "filename": "neurafs/cli.py",
+        "status": "modified",
+        "additions": 95,
+        "deletions": 7,
+        "changes": 102,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/config.py",
+        "status": "modified",
+        "additions": 34,
+        "deletions": 2,
+        "changes": 36,
+        "previous_filename": null
+      },
+      {
+        "filename": "neurafs/core/storage.py",
+        "status": "modified",
+        "additions": 9,
+        "deletions": 1,
+        "changes": 10,
+        "previous_filename": null
+      }
+    ]
+  }
+}

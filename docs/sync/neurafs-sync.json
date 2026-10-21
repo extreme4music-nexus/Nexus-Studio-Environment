@@ -1,0 +1,42 @@
+{
+  "source_status": {
+    "code": 0,
+    "stdout": "## codex/local-neurafs-repair-20261016...origin/codex/local-neurafs-repair-20261016\n?? build/\n?? dist/\n?? neurafs.egg-info/\n?? neurafs_uninstall.log\n",
+    "stderr": ""
+  },
+  "source_head": {
+    "code": 0,
+    "stdout": "e5e1fdf19716c73f7ef492717ea1fa4b04c9dff1\n",
+    "stderr": ""
+  },
+  "source_branches": {
+    "code": 0,
+    "stdout": "* codex/local-neurafs-repair-20261016 e5e1fdf19 [origin/codex/local-neurafs-repair-20261016] log-interrupted-package-sync\n  main                                077457e68 [origin/main: behind 1] Delete index.html.bak\n",
+    "stderr": ""
+  },
+  "working_diff": {
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "staged_diff": {
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "remote_refs": {
+    "code": 0,
+    "stdout": "e5e1fdf19716c73f7ef492717ea1fa4b04c9dff1\trefs/heads/codex/local-neurafs-repair-20261016\n3a3ae126e668574a59ad6f1cf04e63d92203d30a\trefs/heads/extreme4music-nexus-patch-1\ndf8bfab823d63a09c96fde79a3536ff1af47801d\trefs/heads/main\n",
+    "stderr": ""
+  },
+  "ahead_behind_upstream": {
+    "code": 0,
+    "stdout": "0\t0\n",
+    "stderr": ""
+  },
+  "ahead_behind_main": {
+    "code": 0,
+    "stdout": "48\t1\n",
+    "stderr": ""
+  }
+}
