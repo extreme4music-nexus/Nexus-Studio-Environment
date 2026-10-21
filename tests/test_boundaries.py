@@ -38,3 +38,11 @@ class BoundaryTests(unittest.TestCase):
             result = subprocess.run(['git', 'check-ignore', f'modules/{module}/reference/legacy/probe.py'],
                                     cwd=ROOT, capture_output=True)
             self.assertEqual(result.returncode, 0)
+
+
+    def test_workspace_metadata_ignored(self):
+        for relative in ('user-projects/id/HEAD.json', 'user-projects/id/r00000001-abc.json',
+                         'user-projects/id/.write.lock', 'user-projects/id/.head-abc.tmp',
+                         'private.nexus-backup.json'):
+            result = subprocess.run(['git', 'check-ignore', relative], cwd=ROOT, capture_output=True)
+            self.assertEqual(result.returncode, 0, relative)

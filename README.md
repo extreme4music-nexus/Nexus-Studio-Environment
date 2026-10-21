@@ -28,3 +28,7 @@ This scaffold does not yet implement the production runtime or UI.
 ## Прв функционален костур
 
 Модулскиот runtime е имплементиран со contracts, registry, dependency validation, lifecycle/cleanup и JSON diagnostics. [Стартување и документација](docs/runtime/README.md). Демо-модулите се fake; не се реален Nexus или NeuraFS.
+
+## WP002-LOCAL-20261022 — Workspace
+
+[Проекти, сесии, одлуки, ревизии и metadata backup/restore](docs/workspace/README.md) се достапни преку `nexus-workspace` CLI и јавниот WorkspacePort. Backend-от е поврзан со модулскиот Runtime. Нема UI или media-byte storage во овој пакет.

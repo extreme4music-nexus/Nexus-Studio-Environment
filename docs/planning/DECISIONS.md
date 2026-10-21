@@ -52,3 +52,12 @@ D-006 останува историски предлог и повеќе не е
 | D-023 | Имплементирано | Синхрон in-process runtime; allowlist factories; contract major=1; snapshot registry; без dynamic imports од конфигурација. | Малиот одобрен WP-001 опфат, без нови framework зависности. |
 | D-024 | Имплементирано | Runtime е single-use: повторен running start и stop се no-op; restart по stop/failure бара нови instances. | Спречува повторна употреба на disposed ресурси. |
 | D-025 | Имплементирано | Јавни грешки содржат exception type; original exception е локален cause; root cause и cleanup issues се одделни. | Чесни diagnostics без raw sensitive exception text во JSON. |
+
+## WP002-LOCAL-20261022
+
+| ID | Статус | Одлука | Основа |
+|---|---|---|---|
+| D-026 | Потврдено | Започнува Workspace пакетот по WP-001. | Директна корисничка насока „Ајде започни“. |
+| D-027 | Имплементирано | Верзиониран JSON metadata backend со exclusive writer lock и optimistic revision check. | ADR 0002; избегнува непроверена SQLite-on-NAS претпоставка. |
+| D-028 | Имплементирано | Backup е тековна metadata состојба; restore во постоен здрав проект бара revision и создава нова revision. | Без препокривање историја и без лажно тврдење дека media bytes се зачувани. |
+| D-029 | Имплементирано | Stable Workspace service reference се вбризгува пред start; повиците се gated до running. | Постојниот Runtime initialize/start редослед и contract boundary. |

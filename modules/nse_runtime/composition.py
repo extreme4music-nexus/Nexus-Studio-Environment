@@ -44,3 +44,11 @@ def compose(config: RuntimeConfig, factories: Mapping[str, Callable[[], Module]]
     runtime = Runtime(registry)
     runtime.validate()
     return runtime
+
+
+def compose_workspace(root):
+    """Explicit concrete wiring; clients receive only the public service reference."""
+    from nse_workspace.module import WorkspaceModule
+    module = WorkspaceModule(root)
+    runtime = compose(RuntimeConfig(('workspace',)), {'workspace': lambda: module})
+    return runtime, module.service

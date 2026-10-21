@@ -51,3 +51,9 @@ FRAME-01–08 и FRAME-10 се завршени локално. FRAME-09 чек�
 ## 2026-10-21 — WP001-CLOSED-20261021
 
 Код и системски план се зачувани во 905f52081997499fa17657784d288bdf6bf0d2f9 и push-нати. GitHub Actions run 39642338500 заврши success: Windows, Ubuntu/Linux и macOS; секој job помина install, 24 tests, validate и fake demo. Offline wheel smoke исто помина локално. FRAME-01–10 се затворени; sanitised CI evidence е зачуван во docs/runtime/ci-evidence.json. Завршната evidence промена е само документација. Следна точка: разработка на WP-002 Workspace/project contracts и persistence, според master roadmap; не е започната нова функционална фаза во овој пакет.
+
+## 2026-10-22 — WP002-LOCAL-20261022
+
+Почетна ревизија 75f9a95083cea33520efbeae5eb14f3486e89e95, чист Git статус. Прво се зачувани WP-002 и ADR 0002, потоа contracts/backend/service/module/CLI и тестови. Извршени се 51 Windows тестови, NAS metadata smoke и offline wheel build/install smoke со независно create/reopen. Сите поминаа; нема legacy или NeuraFS код/податоци менувани. Проверени се corrupt/partial-write сценарија и два одделни writer процеси.
+
+WORK-01–05 се metadata-only завршени локално; UI и media области остануваат отворени. Пред конечна испорака следи Git sync и remote CI потврда, со evidence. Следен производен пакет е UI toolkit prototype/shared design system за project browser, пред градење голем UI.

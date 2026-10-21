@@ -64,3 +64,7 @@
 ## WP001-CLOSED-20261021
 
 WP-001 е завршен: 24 локални тестови, offline package smoke и успешни GitHub Actions Windows/Linux/macOS jobs за кодна ревизија 905f520. FRAME-09 е затворен; претходните pending записи се историја. Промените и претходниот системски план се commit-нати и push-нати во приватниот репозиториум. Следна област е Workspace/project пакетот; реалните AI/audio/NeuraFS интеграции не се започнати.
+
+## WP002-LOCAL-20261022
+
+Workspace metadata пакетот е имплементиран и поврзан со Runtime. Работат create/open/save/list, history, sessions/decisions, asset references и metadata-only backup/restore. 51 локални тестови, NAS metadata smoke и isolated wheel install smoke поминаа. Backend е immutable JSON revisions + CAS/lock/HEAD; нема автоматско бришење stale locks или непознати schema migrations. Remote CI е pending. Нема UI, реален модел, audio processing или NeuraFS промени во пакетот.

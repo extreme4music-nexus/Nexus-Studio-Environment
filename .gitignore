@@ -46,3 +46,10 @@ modules/*/reference/manifest.json
 *.flac
 *.iso
 *.vhd*
+
+# Workspace runtime metadata (keep projects/backups outside source control)
+**/HEAD.json
+**/r[0-9]*-*.json
+**/.write.lock
+**/.head-*.tmp
+*.nexus-backup.json

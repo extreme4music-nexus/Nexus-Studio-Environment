@@ -1,0 +1,17 @@
+# WP-002 — verification
+
+Датум: 2026-10-22. Почетна ревизија: 75f9a95083cea33520efbeae5eb14f3486e89e95.
+
+Проверки пред затворање: цел unit/integration suite, независни CLI процеси, concurrent writers, partial-write/corrupt-schema/backup/reopen сценарија, module dependency lifecycle, offline wheel install, локален и NAS metadata smoke, Git boundary и remote Windows/Linux/macOS CI.
+
+Овој документ се дополнува со вистински резултати по извршување. Нема готов UI, модел, audio engine или NeuraFS интеграција во пакетот. Media backup и automatic migration на понови schema верзии не се тврдат како завршени.
+
+## WP002-LOCAL-20261022
+
+51 тестови поминаа на Windows/Python 3.12, вклучувајќи ги претходните runtime тестови. Новите проверки опфаќаат Unicode project create/reopen, sessions/decisions и project isolation, stale save, threaded и два spawn-процеси writers, lock, partial snapshot/head failures, corrupt checksum/history/schema, path/JSON validation, metadata backup/restore и lifecycle injection.
+
+NAS smoke на Z: во сопствена temporary папка помина create/session/decision, Runtime stop/reopen, stale-write rejection, metadata backup/restore и cleanup. Ова е evidence за таа storage патека, не општа power-loss/NAS гаранција.
+
+Offline wheel build/install: 33 archive entries, нема legacy payload. Workspace entry point е најден преку installed distribution metadata. Create/show преку независни процеси и installed metadata smoke поминаа во изолирана temporary target инсталација; нема глобална инсталација или network во packaging проверката.
+
+Новите Git ignore правила ги покриваат HEAD/revision/lock/temp metadata и *.nexus-backup.json. Проекти и други backup имиња треба да останат надвор од изворниот репозиториум. Remote Windows/Linux/macOS CI допрва се потврдува по push; не е прогласено за поминато во овој запис.

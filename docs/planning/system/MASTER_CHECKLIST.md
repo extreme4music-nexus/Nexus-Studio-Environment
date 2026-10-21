@@ -25,11 +25,11 @@
 
 ## WORK/UI — Проекти и работна средина
 
-- [ ] WORK-01: Project/asset/session/decision шеми, IDs и versioning.
-- [ ] WORK-02: Metadata backend ADR, atomicity/concurrency и локална/NAS граница.
-- [ ] WORK-03: Create/open/save/reopen и conflict detection без overwrites.
-- [ ] WORK-04: Assets/revisions/derived artifacts и provenance.
-- [ ] WORK-05: Backup/export/recovery правило за project metadata.
+- [x] WORK-01: Project/asset/session/decision шеми, IDs и versioning.
+- [x] WORK-02: Metadata backend ADR, atomicity/concurrency и локална/NAS граница.
+- [x] WORK-03: Create/open/save/reopen и conflict detection без overwrites.
+- [x] WORK-04: Assets/revisions/derived artifacts и provenance.
+- [x] WORK-05: Backup/export/recovery правило за project metadata.
 - [ ] UI-01: UI toolkit prototype и Windows/Linux/macOS compatibility evidence.
 - [ ] UI-02: Заеднички design tokens, bundled fonts, navigation и state model.
 - [ ] UI-03: Project browser/workspace и module diagnostics преку SDK.
@@ -108,3 +108,7 @@ PLAN-05 е потврден со корисничкото „Ајде започ
 ## WP001-CLOSED-20261021
 
 Сите FRAME-01–10 се завршени. Windows/Linux/macOS install, tests, validate и demo се потврдени во [CI evidence](../../runtime/VERIFICATION.md) за кодната ревизија 905f520. Претходната белешка дека FRAME-09 чека CI е историска; CI сега е помината.
+
+## WP002-LOCAL-20261022
+
+WORK-01–05 се имплементирани и локално проверени во metadata-only опфатот: project/session/decision/asset-reference schema, revision/CAS backend, reopen/history и metadata backup/restore. WORK-04 е provenance на референци, не media import/render. WORK-05 не вклучува backup на audio/MIDI bytes или целосна revision history. Сите UI/NFS/CORE/AUDIO/MUSIC ставки остануваат отворени. [Докази](../../workspace/VERIFICATION.md). Remote CI е pending.

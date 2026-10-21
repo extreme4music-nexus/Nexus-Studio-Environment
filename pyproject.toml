@@ -10,6 +10,7 @@ requires-python = ">=3.12"
 
 [project.scripts]
 nexus-runtime = "nse_runtime.__main__:main"
+nexus-workspace = "nse_runtime.workspace_cli:main"
 
 [tool.setuptools.packages.find]
 where = ["modules"]
