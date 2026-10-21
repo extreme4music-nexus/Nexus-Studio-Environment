@@ -20,7 +20,7 @@
 - [x] FRAME-06: Конфигурација и CLI diagnostics со вистински статуси.
 - [x] FRAME-07: Два означени fake модули со проверлив service повик.
 - [x] FRAME-08: Success/failure/lifecycle тестови и legacy exclusion проверки.
-- [ ] FRAME-09: Windows smoke; CI evidence за Windows/Linux/macOS или експлицитно непроверено.
+- [x] FRAME-09: Windows smoke; CI evidence за Windows/Linux/macOS или експлицитно непроверено.
 - [x] FRAME-10: Runtime документација, module authoring пример и затворен пакет со докази.
 
 ## WORK/UI — Проекти и работна средина
@@ -104,3 +104,7 @@
 ## WP001-LOCAL-EVIDENCE — 2026-10-21
 
 PLAN-05 е потврден со корисничкото „Ајде започни. Ми се допаѓа“. FRAME-01–08 и FRAME-10 се имплементирани и проверени локално: 24 тестови, offline wheel build/install и изолирано demo. FRAME-09 е делумно: Windows е проверен, CI matrix е конфигурирана, Linux/macOS remote резултати сè уште не се потврдени. Докази: [runtime verification](../../runtime/VERIFICATION.md).
+
+## WP001-CLOSED-20261021
+
+Сите FRAME-01–10 се завршени. Windows/Linux/macOS install, tests, validate и demo се потврдени во [CI evidence](../../runtime/VERIFICATION.md) за кодната ревизија 905f520. Претходната белешка дека FRAME-09 чека CI е историска; CI сега е помината.

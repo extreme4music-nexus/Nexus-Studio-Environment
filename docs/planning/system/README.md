@@ -22,4 +22,4 @@
 
 ## WP001-IMPLEMENTED-20261021
 
-Првиот костур е имплементиран локално; [runtime документација](../../runtime/README.md) и [verification](../../runtime/VERIFICATION.md). Модулската функционалност е проверена на Windows; remote Linux/macOS резултатите остануваат непотврдени до CI evidence.
+Првиот костур е имплементиран локално; [runtime документација](../../runtime/README.md) и [verification](../../runtime/VERIFICATION.md). Модулската функционалност е проверена локално на Windows и во CI на Windows/Linux/macOS; FRAME-01–10 се затворени. Доказите се во runtime verification.

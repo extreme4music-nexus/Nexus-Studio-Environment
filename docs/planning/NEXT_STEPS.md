@@ -1,4 +1,4 @@
-> WP001-IMPLEMENTED-20261021: Костурот е имплементиран и локално проверен. Следно: потврда на CI и разработка на WORK/UI пакетот за проекти според [master roadmap](system/ROADMAP.md). Види [verification](../runtime/VERIFICATION.md).
+> WP001-IMPLEMENTED-20261021: Костурот е имплементиран и локално проверен. CI е потврдена на Windows/Linux/macOS. Следно: разработка на WORK/UI пакетот за проекти според [master roadmap](system/ROADMAP.md). Види [verification](../runtime/VERIFICATION.md).
 
 > SYSTEM-MASTER-20261021: Актуелната целина е во [системскиот план](system/README.md), оперативните задачи се во [MASTER_CHECKLIST](system/MASTER_CHECKLIST.md), а првиот пакет е [WP-001](system/WORK_PACKAGE_001.md). Постарите листи подолу се задржани како историја.
 

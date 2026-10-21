@@ -1,0 +1,30 @@
+{
+  "run_id": 39642338500,
+  "head_sha": "905f52081997499fa17657784d288bdf6bf0d2f9",
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39642338500",
+  "jobs": [
+    {
+      "id": 119368816213,
+      "name": "check (macos-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39642338500/job/119368816213"
+    },
+    {
+      "id": 119368816303,
+      "name": "check (ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39642338500/job/119368816303"
+    },
+    {
+      "id": 119368816429,
+      "name": "check (windows-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39642338500/job/119368816429"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # WP-001 — Модулски костур
 
-Статус: одобрен од корисникот и имплементиран локално. 24 тестови и offline wheel build/install поминаа. Remote Linux/macOS проверки остануваат gate во FRAME-09; види [verification](../../runtime/VERIFICATION.md). Поврзани задачи: FRAME-01 до FRAME-10 во MASTER_CHECKLIST.
+Статус: одобрен од корисникот и имплементиран локално. 24 тестови и offline wheel build/install поминаа. Windows/Linux/macOS CI е потврдена; FRAME-01–10 се завршени; види [verification](../../runtime/VERIFICATION.md). Поврзани задачи: FRAME-01 до FRAME-10 во MASTER_CHECKLIST.
 
 ## Корисничка и инженерска цел
 

@@ -21,3 +21,7 @@ Build/install smoke и финалните CLI smoke резултати се до
 ## OFFLINE-PACKAGE-SMOKE
 
 Offline build со локален setuptools и без network: nexus_studio_environment-0.1.0-py3-none-any.whl, 27 entries. Wheel содржи nse_runtime и nse_contracts; нема legacy дрва или manifest inventories. Инсталиран е само во привремена target папка, без глобална инсталација. `python -B -m nse_runtime demo` од изолирана работна папка со инсталираниот wheel го врати очекуваниот fake service резултат и disposed состојби. Cleanup на привремената инсталација заврши.
+
+## WP001-CLOSED-20261021 — Remote CI потврден
+
+Проверена кодна ревизија: `905f52081997499fa17657784d288bdf6bf0d2f9`. [GitHub Actions run](https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39642338500) заврши success. Windows, Ubuntu/Linux и macOS jobs поминаа: package install, 24 tests, config validate и fake module demo. Санитизираните податоци се во ci-evidence.json. FRAME-09 е затворен. Ова докажува cross-platform костур, а не идентичност на идниот UI или реални audio/model/NeuraFS функции. Овој запис е документациска промена по проверената кодна ревизија.

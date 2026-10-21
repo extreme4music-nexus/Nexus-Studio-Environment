@@ -60,3 +60,7 @@
 ## WP001-IMPLEMENTED-20261021
 
 Корисникот го одобри системскиот план и почетокот. Нови contracts/runtime/demo/test области се имплементирани. 24 тестови на Windows/Python 3.12 поминаа; offline wheel build/install smoke помина од изолирана папка. Нема legacy payload во wheel. Демо сервисите се fake. CI matrix е конфигурирана; remote platform резултатите не се потврдени. Реален Nexus, UI и NeuraFS интеграција остануваат следни фази.
+
+## WP001-CLOSED-20261021
+
+WP-001 е завршен: 24 локални тестови, offline package smoke и успешни GitHub Actions Windows/Linux/macOS jobs за кодна ревизија 905f520. FRAME-09 е затворен; претходните pending записи се историја. Промените и претходниот системски план се commit-нати и push-нати во приватниот репозиториум. Следна област е Workspace/project пакетот; реалните AI/audio/NeuraFS интеграции не се започнати.

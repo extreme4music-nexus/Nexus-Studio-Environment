@@ -47,3 +47,7 @@ docs/ARCHITECTURE.md, docs/BOUNDARIES.md, docs/UI_PARITY.md и docs/SETUP_REPORT
 Вистинскиот NAS проект помина 24 тестови на Windows/Python 3.12. Првиот staging обид не помина поради sandbox temporary-directory cleanup и отсуство на Git checkout; тоа е документирано и финалната проверка во проектот помина. Offline wheel build/install smoke од независна папка помина; нема legacy payload. Во овој пакет не се извршуваше стар Nexus/NeuraFS код и не се создаваа модели или audio jobs.
 
 FRAME-01–08 и FRAME-10 се завршени локално. FRAME-09 чека remote CI/platform evidence. Пред зачувување се прегледуваат diff и staged paths; legacy snapshots и приватни manifests мора да останат игнорирани. Следен чекор по потврда на CI: WP-002 детализација за project/workspace contracts и persistence, без автоматски избор на UI toolkit или модел.
+
+## 2026-10-21 — WP001-CLOSED-20261021
+
+Код и системски план се зачувани во 905f52081997499fa17657784d288bdf6bf0d2f9 и push-нати. GitHub Actions run 39642338500 заврши success: Windows, Ubuntu/Linux и macOS; секој job помина install, 24 tests, validate и fake demo. Offline wheel smoke исто помина локално. FRAME-01–10 се затворени; sanitised CI evidence е зачуван во docs/runtime/ci-evidence.json. Завршната evidence промена е само документација. Следна точка: разработка на WP-002 Workspace/project contracts и persistence, според master roadmap; не е започната нова функционална фаза во овој пакет.
