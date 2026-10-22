@@ -1,0 +1,32 @@
+{
+  "id": 39739903936,
+  "head_sha": "172f3bdbe8d407d6263af679ec7bcbda747ad52d",
+  "conclusion": "success",
+  "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39739903936",
+  "jobs": [
+    {
+      "name": "check (ubuntu-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39739903936/job/119694334163"
+    },
+    {
+      "name": "check (windows-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39739903936/job/119694334350"
+    },
+    {
+      "name": "check (macos-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/extreme4music-nexus/Nexus-Studio-Environment/actions/runs/39739903936/job/119694334560"
+    }
+  ],
+  "local": {
+    "tests": 61,
+    "platform": "Windows / Python 3.12",
+    "result": "passed",
+    "visual_previews": [
+      "sessions",
+      "decisions"
+    ]
+  }
+}

@@ -118,3 +118,5 @@ WORK-01–05 се имплементирани и локално провере�
 WORK-01–05 се затворени во metadata-only опфатот од WP-002, со 51 тестови и successful install/demo/CLI проверки на Windows/Linux/macOS. [Verification](../../workspace/VERIFICATION.md). Media import, byte backup, UI, audio и NeuraFS интеграцијата остануваат отворени според нивните посебни ставки.
 
 > WP-003 (2026-10-22): Project browser prototype and shared theme/font delivered; 57 tests and three mandatory OS CI jobs passed. UI-01/02 remain open for native/high-DPI parity; UI-03 remains partial pending SDK diagnostics; UI-04 remains open. See [UI verification](../../ui/VERIFICATION.md).
+
+> WP-004: Session/decision browsing е завршен, со 61 тест и триплатформска CI. UI-03 сè уште е делумен до SDK/module diagnostics; останатите UI release gates се отворени. По извештај следува стоп до корисничка инструкција.

@@ -1,3 +1,5 @@
+> WP004-COMPLETE-20261022: Прегледот на сесии и одлуки е завршен; 61 локални тестови и Windows/Linux/macOS CI поминаа. [Документација](../ui/SESSION_DECISION_BROWSER.md). По секоја заокружена имплементација: извештај и стоп; следна работа само по ново „продолжи“ од корисникот. Следен предложен пакет е состојба на модулите, НЕ е започнат.
+
 > WP003-PROTOTYPE-20261022: Studio project browser е имплементиран; UI-01/02/03 остануваат делумни до native parity/SDK diagnostics проверки. [Детали](../ui/README.md).
 
 > WP002-LOCAL-20261022: Workspace metadata е имплементиран и локално проверен. Windows/Linux/macOS CI е потврдена. Следно: UI-01/02 prototype и design-system пакет за project browser; toolkit не е однапред избран. [Workspace verification](../workspace/VERIFICATION.md).

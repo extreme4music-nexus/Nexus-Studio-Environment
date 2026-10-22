@@ -71,3 +71,9 @@ Git auto-maintenance при првиот commit пријави permission warnin
 Studio project browser prototype: injected WorkspacePort, serialized background IO, revision-safe save, dirty guards, shared Fusion theme and bundled Noto Sans/OFL. 56 local tests passed including five UI action/thread/error tests. Synthetic preview inspected; initial missing font fixed. Native accessibility/high-DPI and final UI parity remain open. Legacy files unchanged. See docs/ui/VERIFICATION.md for CI evidence.
 
 WP-003 closed: 57 tests; independent wheel smoke; successful CI run 39687832293 on all three OSes. Initial Linux missing-EGL failure fixed and required UI imports enforced. Next bounded work: module diagnostics and session/decision browsing; native visual parity remains a release gate.
+
+## WP-004 · 2026-10-22 · ЗАВРШЕНО
+
+Read-only сесии/одлуки во Studio: целосен текст, датум, извор, статус и врска со сесија; празни состојби, project isolation, долги/plain текстови и тастатура. 61 локални тестови поминаа; CI 39739903936 успешна на Windows/Linux/macOS, вклучително рендерирање на двата таба. Legacy не е менуван.
+
+Корисничко правило: една заокружена имплементација → проверки/документација → извештај → стоп. Не продолжуваме со следниот пакет до нова корисничка инструкција. Module diagnostics не е започнат.
