@@ -102,3 +102,70 @@ class StudioTests(unittest.TestCase):
         font = QRawFont.fromFont(QFont('Noto Sans', 14))
         self.assertTrue(font.isValid())
         self.assertTrue(all(font.supportsCharacter(ord(c)) for c in 'ЃѓЌќЉљЊњЏџЅѕ'))
+
+    def populated(self):
+        self.create()
+        project = self.service.add_session(self.window.project.project_id, 1, 'Прва сесија', 'Ќе пробаме тивок вовед.')
+        project = self.service.add_session(project.project_id, project.revision, 'Втора сесија', '<b>Буквален текст</b>\n' + 'Долг опис ' * 1000)
+        project = self.service.add_decision(project.project_id, project.revision, 'Остануваме во 6/8', 'Корисник', project.sessions[0].session_id)
+        project = self.service.add_decision(project.project_id, project.revision, '<script>Нема извршување</script>', 'Лична белешка', status='proposed')
+        project = self.service.add_decision(project.project_id, project.revision, 'Без тапани', 'Корисник', status='rejected')
+        self.window.reload.click(); self.wait()
+        return project
+
+    def test_activity_details_statuses_and_literal_text(self):
+        project = self.populated()
+        self.assertEqual(self.window.sessions.items.count(), 2)
+        self.assertEqual(self.window.decisions.items.count(), 3)
+        self.assertIn('Ќе пробаме', self.window.sessions.detail.toPlainText())
+        self.window.sessions.items.setCurrentRow(1)
+        self.assertIn('<b>Буквален текст</b>', self.window.sessions.detail.toPlainText())
+        self.assertIn('Долг опис ' * 1000, self.window.sessions.detail.toPlainText())
+        self.assertTrue(self.window.sessions.detail.isReadOnly())
+        detail = self.window.decisions.detail.toPlainText()
+        for value in ('6/8', 'Прифатена', 'Корисник', 'Прва сесија', project.decisions[0].created_at):
+            self.assertIn(value, detail)
+        self.window.decisions.items.setCurrentRow(1)
+        for value in ('<script>Нема извршување</script>', 'Предложена', 'Општа одлука'):
+            self.assertIn(value, self.window.decisions.detail.toPlainText())
+        self.window.decisions.items.setCurrentRow(2)
+        self.assertIn('Одбиена', self.window.decisions.detail.toPlainText())
+
+    def test_browsing_preserves_dirty_text_and_does_not_write(self):
+        project = self.populated()
+        self.window.brief.setPlainText('Незачувана насока')
+        for tab in (1, 2, 0):
+            self.window.tabs.setCurrentIndex(tab)
+        self.window.sessions.items.setCurrentRow(1)
+        self.assertTrue(self.window.dirty)
+        self.assertEqual(self.window.brief.toPlainText(), 'Незачувана насока')
+        self.assertEqual(self.service.open(project.project_id), project)
+        self.window.save.click(); self.wait()
+        self.assertEqual(self.window.sessions.items.currentRow(), 1)
+        self.assertEqual(self.window.sessions.items.count(), 2)
+        self.assertEqual(self.window.project.decisions, project.decisions)
+
+    def test_activity_empty_states_and_project_isolation(self):
+        from PySide6.QtCore import Qt
+        project = self.populated()
+        self.window.create_project('Празен проект'); self.wait()
+        self.assertEqual(self.window.sessions.items.count(), 0)
+        self.assertEqual(self.window.decisions.items.count(), 0)
+        self.assertEqual(self.window.sessions.detail.toPlainText(), '')
+        self.assertEqual(self.window.decisions.detail.toPlainText(), '')
+        self.assertIn('нема сесии', self.window.sessions.hint.text())
+        self.assertIn('нема одлуки', self.window.decisions.hint.text())
+        item = next(self.window.projects.item(i) for i in range(self.window.projects.count())
+                    if self.window.projects.item(i).data(Qt.ItemDataRole.UserRole) == project.project_id)
+        self.window.open_item(item); self.wait()
+        self.assertEqual(self.window.decisions.items.count(), 3)
+
+    def test_activity_keyboard_navigation(self):
+        from PySide6.QtCore import Qt
+        from PySide6.QtTest import QTest
+        self.populated()
+        self.window.tabs.setCurrentIndex(1)
+        self.window.sessions.items.setFocus()
+        QTest.keyClick(self.window.sessions.items, Qt.Key.Key_Down)
+        self.assertEqual(self.window.sessions.items.currentRow(), 1)
+        self.assertIn('Буквален текст', self.window.sessions.detail.toPlainText())

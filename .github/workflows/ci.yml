@@ -25,3 +25,5 @@ jobs:
       - run: nexus-workspace --help
       - run: nexus-studio --help
       - run: python -B examples/studio-preview.py --output studio-preview.png
+      - run: python -B examples/studio-preview.py --tab sessions --output studio-sessions.png
+      - run: python -B examples/studio-preview.py --tab decisions --output studio-decisions.png

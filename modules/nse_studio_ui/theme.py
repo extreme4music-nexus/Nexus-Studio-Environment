@@ -17,6 +17,10 @@ def apply_theme(app):
         QLabel#muted { color:#aab9cb; }
         QListWidget, QLineEdit, QTextEdit { background:#1b222d; border:1px solid #354153;
             border-radius:6px; padding:10px; selection-background-color:#405575; }
+        QTabWidget::pane { border:1px solid #354153; border-radius:6px; }
+        QTabBar::tab { background:#202833; padding:10px 16px; border:1px solid #354153; }
+        QTabBar::tab:selected { color:#edba72; background:#1b222d; border-bottom:2px solid #edba72; }
+        QTabBar::tab:focus { border:2px solid #edba72; }
         QListWidget::item { padding:14px; border-bottom:1px solid #354153; }
         QListWidget::item:selected { background:#405575; }
         QPushButton { background:#283443; border:1px solid #52627a; border-radius:6px;

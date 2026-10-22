@@ -1,8 +1,9 @@
 """UI-thread widgets with one serialized background WorkspacePort operation."""
 from PySide6.QtCore import QObject, QRunnable, QThreadPool, Signal, Qt
 from PySide6.QtWidgets import (QWidget, QLabel, QPushButton, QLineEdit, QTextEdit,
-    QListWidget, QListWidgetItem, QHBoxLayout, QVBoxLayout, QMessageBox, QInputDialog)
+    QListWidget, QListWidgetItem, QHBoxLayout, QVBoxLayout, QMessageBox, QInputDialog, QTabWidget)
 from nse_contracts.workspace import WorkspacePort, WorkspaceError
+from .activity import RecordBrowser
 
 
 class Signals(QObject):
@@ -64,11 +65,18 @@ class StudioWindow(QWidget):
         right.addWidget(QLabel('Име на проект'))
         self.name = QLineEdit(); self.name.setAccessibleName('Име на проект')
         right.addWidget(self.name)
-        right.addWidget(QLabel('Креативна насока'))
+        right.addWidget(QLabel('Содржина на проектот'))
         self.brief = QTextEdit(); self.brief.setAcceptRichText(False)
         self.brief.setAccessibleName('Креативна насока')
         self.brief.setPlaceholderText('Каква музика сакаш да создадеш?')
-        right.addWidget(self.brief, 1)
+        self.tabs = QTabWidget()
+        self.tabs.setAccessibleName('Содржина на проект')
+        self.tabs.addTab(self.brief, 'Креативна насока')
+        self.sessions = RecordBrowser('sessions')
+        self.decisions = RecordBrowser('decisions')
+        self.tabs.addTab(self.sessions, 'Сесии')
+        self.tabs.addTab(self.decisions, 'Одлуки')
+        right.addWidget(self.tabs, 1)
         self.details = QLabel('Избери проект или создај нов.'); self.details.setWordWrap(True)
         self.details.setObjectName('muted'); right.addWidget(self.details)
         actions = QHBoxLayout()
@@ -134,6 +142,8 @@ class StudioWindow(QWidget):
         self.project = project
         self.name.setText(project.name)
         self.brief.setPlainText(project.creative_brief)
+        self.sessions.set_project(project)
+        self.decisions.set_project(project)
         self.details.setText(f'Ревизија {project.revision}  ·  Сесии {len(project.sessions)}'
             f'  ·  Одлуки {len(project.decisions)}  ·  Ресурси {len(project.assets)}\n'
             f'Последна промена: {project.updated_at}')

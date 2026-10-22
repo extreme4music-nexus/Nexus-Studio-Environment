@@ -11,3 +11,5 @@ Common appearance: Fusion style, shared colors/spacing, Noto Sans bundled under 
 Font provenance: downloaded 2026-10-22 from https://github.com/google/fonts/tree/main/ofl/notosans . Packaged font and license hashes are recorded in assets/manifest.json. Qt distribution/license compliance must be reviewed before release: https://doc.qt.io/qtforpython-6/licenses.html .
 
 Checks: `python -B -m unittest discover -s tests -v`; render synthetic-only preview with `python examples/studio-preview.py --output preview.png`. CI runs these actions offscreen on Windows/Linux/macOS. Interactive desktop, screen-reader, high-DPI and visual comparison checks remain pending.
+
+WP-004 adds [session and decision browsing](SESSION_DECISION_BROWSER.md) through read-only tabs; existing records are now fully readable, not just counted.
